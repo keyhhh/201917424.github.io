@@ -1,0 +1,185 @@
+/*
+总体div
+ */
+.resume {
+    background-color: gainsboro;
+    margin-left: 20%;
+    width: 60%;
+    height: 100%;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+
+/*
+第一部分div
+ */
+.div_resume_head {
+    background: url("../img/蓝色.jpeg") no-repeat;
+    background-size: 100% 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*height: 60%;*/
+    /*width: 100%;*/
+
+}
+
+.div_resume_head #div_resume_head_headImg {
+    width: 80%;
+    height: 80%;
+    text-align: center;
+}
+
+#div_resume_head_td {
+    padding-left: 30px;
+    padding-right: 60px;
+}
+
+.div_resume_head p {
+    text-align: left;
+}
+
+.div_resume_head #p_name {
+    color: white;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-weight: bold; /*文本加粗*/
+}
+
+.div_resume_head #p_work {
+    color: white;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: bold; /*文本加粗*/
+}
+
+.div_resume_head #p_hr {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.div_resume_head #p_self {
+    color: white;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: bold; /*文本加粗*/
+}
+
+.div_resume_head #p_self_content {
+    margin-top: 15px;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+
+/*v脖子*/
+/*.div_resume_neck ul{*/
+/*    list-style: none;*/
+/*    height: 100%;*/
+/*}*/
+/*.div_resume_neck ul li{*/
+/*    float: top;*/
+/*}*/
+
+
+/*
+第二部分div
+ */
+.div_resume_neck table td {
+    width: 33.33%;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    padding-left: 5%;
+}
+
+
+.p_resume_neck_p_title {
+    color: #64A5FA;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: bold; /*文本加粗*/
+    margin-bottom: 25px;
+}
+
+.p_resume_neck_p_2 {
+    text-align: left ;
+    color: black;
+    height: 45px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.div_resume_neck img {
+    width: 8%;
+    vertical-align:middle; /* 让图片位于p标签垂直居中*/
+}
+
+.div_resume_neck td progress {
+    float: right;
+    margin-right: 15%;
+    width: 150px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.div_resume_neck td progress::-webkit-progress-bar { /* 表示未完成进度背景色 */
+    background-color: lightsalmon;
+}
+
+.div_resume_neck td progress::-webkit-progress-value { /* 表示已完成进度背景色 */
+    background: lightskyblue;
+}
+
+/*
+第三部分div
+ */
+
+.body_table_tr_title, .leg_table_tr_title {
+    color: #64A5FA;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: bold; /*文本加粗*/
+}
+
+.body_table_td_0, .leg_table_td_0 {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    padding-left: 5%;
+}
+
+.body_table_td_1, .body_table_td_2,
+.leg_table_td_1, .leg_table_td_2 {
+    padding-bottom: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.body_table_td_1 p,
+.leg_table_td_1 p {
+    color: #64A5FA;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+.body_table_td_1_p1,
+.leg_table_td_1_p1 {
+    font-size: 20px;
+}
+
+.body_table_td_1_p2,
+.leg_table_td_1_p2 {
+    font-size: 15px;
+}
+
+.body_table_td_1_p3, .leg_table_td_1_p3 {
+    font-size: 10px;
+}
+
+.body_table_td_2 p,
+.leg_table_td_2 p {
+    color: black;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+

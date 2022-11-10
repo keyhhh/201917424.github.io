@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>201917424曹宇恒</title>
+    <link rel="shortcut icon" href="./img/shortcut_icon.png">
+    <link type="text/css" rel="stylesheet" href="css/all.css"/>
+    <link type="text/css" rel="stylesheet" href="css/other.css">
+    <script src="js/my.js"></script>
+</head>
+<body>
+<div class="div_head">
+    <h1 class="text"></h1>
+    <p>我的记录⚡⚡⚡</p>
+    <a  href="resume.html">
+        <span>去看简历</span>
+    </a>
+</div>
+<div class="div_problem">
+    <div class="problem">
+        <p class="problem_question">
+            <!--            <img src="img/problem_question.png">-->
+            HTML元素设置居中，只有左上角在中心，而整个内容在第四象限？
+        </p>
+        <p class="problem_where">
+            <!--            <img src="img/problem_where.png">-->
+            HTML/发现自网页设计
+        </p>
+        <p class="problem_solve">
+            <!--            <img src="img/problem_solve.png">-->
+            元素使用绝对定位，设置left、top50%，再根据元素长宽设置margin负距(margin-left为width的一半，margin-top为height的一半)；
+        </p>
+        <div align="center">
+            <img src="img/img_0.png" alt="">
+        </div>
+    </div>
+
+    <div class="problem">
+        <p class="problem_question">
+            <!--            <img src="img/problem_question.png">-->
+            在P标签内嵌套了img标签如何垂直居中？
+        </p>
+        <p class="problem_where">
+            <!--            <img src="img/problem_where.png">-->
+            HTML/发现自网页设计
+        </p>
+        <p class="problem_solve">
+            <!--            <img src="img/problem_solve.png">-->
+            只需设置p标签的vertical-align:middle; </p>
+    </div>
+
+    <div class="problem">
+        <p class="problem_question">
+            <!--            <img src="img/problem_question.png">-->
+            在HTML中如何展示空格？
+        </p>
+        <p class="problem_where">
+            <!--            <img src="img/problem_where.png">-->
+            HTML/发现自网页设计
+        </p>
+        <p class="problem_solve">
+            <!--            <img src="img/problem_solve.png">-->
+            &ensp；：相当全角状态键入半个“空格”键（半个汉字的宽度，一个字符宽度）。
+            &emsp；：相当全角状态键入“空格”键（1个汉字的宽度，两个字符宽度）。
+        </p>
+    </div>
+
+    <div class="problem">
+        <p class="problem_question">
+            <!--            <img src="img/problem_question.png">-->
+            SpringBoot操作Redis时key出现乱码？
+        </p>
+        <p class="problem_where">
+            <!--            <img src="img/problem_where.png">-->
+            SpringBoot/发现自项目开发操作缓存到Redis
+        </p>
+        <p class="problem_solve">
+            <!--            <img src="img/problem_solve.png">-->
+            需要将redisTemplate进行序列化，创建配置类，创建自己序列化后的Bean(返回类型RedisTemplate)，示例代码
+        </p>
+        <div align="center">
+            <img src="./img/img.png" alt="">
+        </div>
+    </div>
+
+    <div class="problem">
+        <p class="problem_question">
+            <!--            <img src="img/problem_question.png">-->
+            编写SpringBoot项目时，导入依赖时总是需要自己处理版本号，容易出错。
+        </p>
+        <p class="problem_where">
+            <!--            <img src="img/problem_where.png">-->
+            SpringBoot/发现自SpringBoot项目 启动失败
+        </p>
+        <p class="problem_solve">
+            <!--            <img src="img/problem_solve.png">-->
+            直接在pom.xml中引用依赖，继承父工程。
+        </p>
+        <div align="center">
+            <img src="./img/img_1.png" alt="">
+        </div>
+    </div>
+
+    <div class="problem">
+        <p class="problem_question">
+            <!--            <img src="img/problem_question.png">-->
+            项目连接Redis失败，尽管没有设置密码。
+        </p>
+        <p class="problem_where">
+            <!--            <img src="img/problem_where.png">-->
+            Redis/发现自项目连接虚拟机Redis超时
+        </p>
+        <p class="problem_solve">
+            <!--            <img src="img/problem_solve.png">-->
+            首先修改启动Redis的配置文件(redis.conf)，将bind内容注释允许远程访问，将protected-mode改为no关闭保护模式，daemonize改为yes允许后台运行，最后关闭防火墙systemctl
+            stop firewalld或者开放redis端口firewall-cmd --zone=public --add-port=6379/tcp --permanent。
+        </p>
+    </div>
+
+    <div class="problem">
+        <p class="problem_question">
+            <!--            <img src="img/problem_question.png">-->
+            我对redis中锁的理解。
+        </p>
+        <p class="problem_where">
+            <!--            <img src="img/problem_where.png">-->
+            Redis/发现自学习秒杀模式
+        </p>
+        <p class="problem_solve">
+            <!--            <img src="img/problem_solve.png">-->
+            原理就是使用setnx key value ，因为setnx 方法创建key前会检查是否存在该key，否则不创建，因此视创建成功为上锁，可以进行数据操作，创建失败为其他线程已经上锁，无法进行操作； 解锁为del
+            key，删除该key，同时为了防止阻塞，可以为key设置过期时间，到期自动解锁。
+        </p>
+    </div>
+
+    <div class="problem">
+        <p class="problem_question">
+            <!--            <img src="img/problem_question.png">-->
+            Linux虚拟机中如何与本地主机进行文件操作？
+        </p>
+        <p class="problem_where">
+            <!--            <img src="img/problem_where.png">-->
+            Linux/发现自需要向虚拟机上传软件安装包
+        </p>
+        <p class="problem_solve">
+            <!--            <img src="img/problem_solve.png">-->
+            方法一：再Linux中安装lrzsz，首先搜索lrzsz安装包：yum list lrzsz，再安装：yum install lrzsz.x86_64，需要上传文件时，控制台输入命令rz；方法二：下载安装Xshell
+            ：是一个强大的安全终端模拟软件，开启VMWare打开虚拟机，使用Xshell连接虚拟机，可以实现文件互传、虚拟机控制台直接粘贴主机复制的内容等功能。
+        </p>
+    </div>
+
+    <div class="problem">
+        <p class="problem_question">
+            <!--            <img src="img/problem_question.png">-->
+            Linux的文件权限查看方式。
+        </p>
+        <p class="problem_where">
+            <!--            <img src="img/problem_where.png">-->
+            Linux/发现自使用ll命令
+        </p>
+        <p class="problem_solve">
+            <!--            <img src="img/problem_solve.png">-->
+            文件属性一共十位，第1位为文件类型:- 普通文件 ， d 目录文件，I 链接文件，p 管理文件， b 块设备文件， c 字符设备文件， s
+            套接字文件；2-4位：文件所属用户权限；5-7位：文件创建者所在用户组其他成员权限；8-10位：其他用户权限；权限所代表字母及数字：(r、可读、4)，(w、可写、2)，(x，可执行，1)，例如最高权限drwxrwxrwx
+            777;
+        </p>
+    </div>
+
+    <div class="problem">
+        <p class="problem_question">
+            <!--            <img src="img/problem_question.png">-->
+            Mysql主从复制操作出错。
+        </p>
+        <p class="problem_where">
+            <!--            <img src="img/problem_where.png">-->
+            Mysql/发现自项目练习使用两台虚拟机实现主从复制
+        </p>
+        <p class="problem_solve">
+            <!--            <img src="img/problem_solve.png">-->
+            我的第一种情况：删除主库的mysql-bin.0000001这类文件时，注意删除mysql-bin.index内容，否则从库无法无法对应上主库；第二种情况：直接手动用navicat删除主库内容后，从库没有删除并且后续操纵无法复制，将同步指针移动到下一指令就可以，跳过这个错误，首先停止同步，然后执行set
+            global sql_slave_skip_counter = 1，最后在开启同步。
+        </p>
+    </div>
+
+
+</div>
+</body>
+</html>
