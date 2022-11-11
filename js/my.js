@@ -110,7 +110,6 @@ let addText = function () {
     let index = Math.floor(Math.random() * titles.length + 0);
     let div = document.createElement("div");
     div.setAttribute('class','problem');
-
     div.style = "border-radius: 25px;" +
         "height: 100%;" +
         "margin-bottom: 20px;" +
@@ -137,10 +136,7 @@ let addText = function () {
     let div_problem = document.getElementById('div_problem');
     //把div元素添加至id为content的节点中
     div_problem.appendChild(div);
-
-    window.scrollTo(0, document.documentElement.scrollHeight-document.documentElement.clientHeight);
-
-
+    window.scrollTo(0, document.documentElement.scrollHeight-document.documentElement.clientHeight);//实现页面跳转到底部
 }
 
 function changeColor() {

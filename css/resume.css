@@ -38,6 +38,9 @@
 .div_resume_head p {
     text-align: left;
 }
+.div_resume_head p a{
+    text-decoration: none;
+}
 
 .div_resume_head #p_name {
     color: white;
